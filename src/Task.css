@@ -1,0 +1,23 @@
+.Task {
+  list-style-type: none;
+  background-color: #f1f1f1;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.Task .checkbox-done {
+  margin-right: 10px;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.Task .delete, .Task .delete:active:focus, .Task .delete:hover, .Task .delete:focus {
+  position: relative;
+  top: -8px;
+  background-image: none;
+  background-color: red;
+  color: #fff;
+  float: right;
+}

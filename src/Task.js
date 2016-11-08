@@ -1,5 +1,6 @@
 import React, {PropTypes} from 'react';
 import {Button, Glyphicon} from 'react-bootstrap';
+import './Task.css';
 
 export default function Task(props) {
   const taskClassName = props.task.done ? 'done Task' : 'Task';

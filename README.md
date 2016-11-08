@@ -229,3 +229,129 @@ Task.propTypes = {
   deleteTask: PropTypes.func.isRequired
 };
 ```
+
+##Add styles
+Update App.css file.
+```
+.App {
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+.App__header {
+  background-color: #2E7D32;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-title {
+  font-size: 14px;
+  margin-top: 7px;
+  margin-bottom: 0;
+}
+
+.App__header .button-hide,
+.App__header .button-hide:focus,
+.App__header .button-hide:hover,
+.App__header .button-hide:active:focus {
+  font-size: 12px;
+  float: right;
+  background-color: #81C784;
+  background-image: none;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+
+
+.App__form {
+  margin-top: 5px;
+}
+
+.App__form .form-group {
+  margin-bottom: 5px;
+}
+
+.App__form .task-input,
+.App__form .input-group-addon {
+  background-color: #43A047;
+  color: #fff;
+}
+
+.App__form .task-input {
+  border-right: 0;
+  border-top: 2px;
+  border-bottom: 2px;
+}
+
+.App__form .input-group-addon {
+  border: 0;
+  font-size: 22px;
+  padding: 4px 12px 8px 12px;
+  cursor: pointer;
+}
+
+input[type="text"].task-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+input[type="text"].task-input::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+}
+input[type="text"].task-input:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+input[type="text"].task-input:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
+
+.task-list {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .header-title {
+    text-align: center;
+    margin-bottom: 10px
+  }
+  .row {
+    text-align: center;
+  }
+  .App__header .button-hide, .App__header .button-hide:focus, .App__header .button-hide:hover,.App__header .button-hide:active:focus  {
+    float: none;
+  }
+}
+```
+
+Create Task.css file and import it to Task.js.
+
+`import './Task.css';`
+
+src/Task.css :
+```
+.Task {
+  list-style-type: none;
+  background-color: #f1f1f1;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.Task .checkbox-done {
+  margin-right: 10px;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.Task .delete, .Task .delete:active:focus, .Task .delete:hover, .Task .delete:focus {
+  position: relative;
+  top: -8px;
+  background-image: none;
+  background-color: red;
+  color: #fff;
+  float: right;
+}
+```
