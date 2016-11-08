@@ -385,3 +385,5 @@ src/Task.css :
   float: right;
 }
 ```
+
+Run the app in development mode with 'npm start' command. Open http://localhost:3000 to view it in the browser.
