@@ -23,3 +23,20 @@ cd todo_app
 Run the app in development mode with 'npm start' command. Open http://localhost:3000 to view it in the browser.
 
 Change title tag to 'To-Do App' in public/index.html.
+
+## Adding Bootstrap
+
+React Bootstrap is a popular library for integrating Bootstrap with React apps.
+Install React Bootstrap and Bootstrap from NPM. React Bootstrap does not include Bootstrap CSS so this needs to be installed as well:
+
+```
+npm install react-bootstrap --save
+npm install bootstrap@3 --save
+```
+
+Import Bootstrap CSS and optionally Bootstrap theme CSS in the src/index.js file:
+
+```
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-theme.css';
+```
