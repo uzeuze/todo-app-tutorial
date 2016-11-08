@@ -1,9 +1,18 @@
 # Building a To Do List App with React
 
+[See live demo on Codepen](http://codepen.io/uzeuze/full/dOyGYN/)
+
 This is a step-by-step tutorial that teaches you how to build to-do list app with React. After completing this tutorial you will get basic understanding of:
 
 * How to bootstrap a React project with `create-react-app` command-line utility,  
 * React-Bootstrap which seems the most popular UI framework.
+
+#### Reading Material
+
+* [Tutorial: Intro To React](https://facebook.github.io/react/tutorial/tutorial.html)
+* [Create React App](https://github.com/facebookincubator/create-react-app)
+* [React Bootstrap](https://react-bootstrap.github.io/)
+* CSS Trick's [BEM 101](https://css-tricks.com/bem-101/)
 
 ## Create a new App
 
@@ -231,7 +240,28 @@ Task.propTypes = {
 ```
 
 ##Add styles
+
+Update index.css file.
+
+```
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #E6EE9C; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #66BB6A, #E6EE9C); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #66BB6A, #E6EE9C); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #66BB6A, #E6EE9C); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #66BB6A, #E6EE9C); /* Standard syntax */
+}
+```
+
 Update App.css file.
+
 ```
 .App {
   max-width: 400px;
