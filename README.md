@@ -386,4 +386,5 @@ src/Task.css :
 }
 ```
 
-Run the app in development mode with 'npm start' command. Open http://localhost:3000 to view it in the browser.
+Run the app in development mode with `npm start` command.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
